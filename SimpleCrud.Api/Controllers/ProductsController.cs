@@ -32,7 +32,7 @@ namespace SimpleCrud.Api.Controllers
         [HttpPost("")]
         public async Task<IActionResult> Create([FromBody] ProductRequest product)
         {
-            if (product == null || !ModelState.IsValid)
+            if (product == null && !ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
@@ -47,7 +47,7 @@ namespace SimpleCrud.Api.Controllers
         [HttpPut("")]
         public async Task<IActionResult> Update([FromBody] UpdateProductRequest product)
         {
-            if (product == null || !ModelState.IsValid)
+            if (product == null && !ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
