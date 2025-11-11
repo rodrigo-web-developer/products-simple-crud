@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SimpleCrud": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
